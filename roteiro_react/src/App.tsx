@@ -1,14 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/home.page';
+import React from "react";
+import Logo from "./components/Logo";
+import Principal from "./components/Principal";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
+    <>
+      <Logo />
+      <Principal />
+    </>
   );
 };
 
